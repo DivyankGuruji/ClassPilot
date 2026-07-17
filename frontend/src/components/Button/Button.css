@@ -1,0 +1,293 @@
+/**
+=========================================
+Component : Button
+Project   : ClassPilot
+Version   : 2.0.0
+=========================================
+*/
+
+/* ==============================
+   Base Button
+============================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    font-family:inherit;
+
+    transition:all .25s ease;
+
+    white-space:nowrap;
+
+    user-select:none;
+
+}
+
+
+/* ==============================
+   Width
+============================== */
+
+.btn-full{
+
+    width:100%;
+
+}
+
+
+/* ==============================
+   Sizes
+============================== */
+
+.btn-sm{
+
+    height:38px;
+
+    padding:0 16px;
+
+    font-size:13px;
+
+}
+
+
+.btn-md{
+
+    height:46px;
+
+    padding:0 22px;
+
+    font-size:15px;
+
+}
+
+
+.btn-lg{
+
+    height:54px;
+
+    padding:0 28px;
+
+    font-size:16px;
+
+}
+
+
+/* ==============================
+   Primary
+============================== */
+
+.btn-primary{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+.btn-primary:hover:not(:disabled){
+
+    background:#1d4ed8;
+
+}
+
+
+/* ==============================
+   Secondary
+============================== */
+
+.btn-secondary{
+
+    background:#e2e8f0;
+
+    color:#1e293b;
+
+}
+
+.btn-secondary:hover:not(:disabled){
+
+    background:#cbd5e1;
+
+}
+
+
+/* ==============================
+   Success
+============================== */
+
+.btn-success{
+
+    background:#22c55e;
+
+    color:#ffffff;
+
+}
+
+.btn-success:hover:not(:disabled){
+
+    background:#16a34a;
+
+}
+
+
+/* ==============================
+   Danger
+============================== */
+
+.btn-danger{
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+}
+
+.btn-danger:hover:not(:disabled){
+
+    background:#dc2626;
+
+}
+
+
+/* ==============================
+   Warning
+============================== */
+
+.btn-warning{
+
+    background:#f59e0b;
+
+    color:#ffffff;
+
+}
+
+.btn-warning:hover:not(:disabled){
+
+    background:#d97706;
+
+}
+
+
+/* ==============================
+   Outline
+============================== */
+
+.btn-outline{
+
+    background:#ffffff;
+
+    color:#2563eb;
+
+    border:1px solid #2563eb;
+
+}
+
+.btn-outline:hover:not(:disabled){
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+
+/* ==============================
+   Icon
+============================== */
+
+.btn-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:16px;
+
+}
+
+
+/* ==============================
+   Loading Spinner
+============================== */
+
+.btn-loader{
+
+    width:18px;
+
+    height:18px;
+
+    border:2px solid rgba(255,255,255,.4);
+
+    border-top-color:#ffffff;
+
+    border-radius:50%;
+
+    animation:button-spin .8s linear infinite;
+
+}
+
+
+@keyframes button-spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ==============================
+   Disabled
+============================== */
+
+.btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ==============================
+   Active Click Effect
+============================== */
+
+.btn:active:not(:disabled){
+
+    transform:scale(.98);
+
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media(max-width:768px){
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}

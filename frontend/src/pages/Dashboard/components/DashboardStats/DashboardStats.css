@@ -1,0 +1,120 @@
+/**
+=========================================
+Component : DashboardStats
+Project   : ClassPilot
+=========================================
+*/
+
+.dashboard-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:24px;
+
+}
+
+.stats-card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-lg);
+
+    padding:22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.stats-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.stats-title{
+
+    font-size:14px;
+
+    color:var(--text-secondary);
+
+    font-weight:500;
+
+}
+
+.stats-value{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--text-color);
+
+}
+
+.stats-growth{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:var(--success-color);
+
+}
+
+.stats-icon{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#ffffff;
+
+    font-size:28px;
+
+}
+
+@media(max-width:768px){
+
+    .dashboard-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

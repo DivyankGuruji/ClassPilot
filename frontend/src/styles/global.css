@@ -1,0 +1,171 @@
+/**
+=========================================
+Global Styles
+Project : ClassPilot
+=========================================
+*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+*::before,
+*::after{
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    margin:0;
+
+    font-family:Inter,Segoe UI,Roboto,sans-serif;
+
+    background:var(--bg-color);
+
+    color:var(--text-color);
+
+    transition:
+        background-color .3s ease,
+        color .3s ease;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+#root{
+
+    min-height:100vh;
+
+    background:var(--bg-color);
+
+}
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    background:var(--card-bg);
+
+    color:var(--text-color);
+
+    border:1px solid var(--border-color);
+
+    transition:
+        border-color .25s,
+        background .25s,
+        color .25s;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:var(--primary-color);
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--border-color);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+::selection{
+
+    background:var(--primary-color);
+
+    color:#ffffff;
+
+}

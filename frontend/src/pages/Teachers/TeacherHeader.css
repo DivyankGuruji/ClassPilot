@@ -1,0 +1,82 @@
+/**
+=========================================
+Component : TeacherHeader
+Project   : ClassPilot
+=========================================
+*/
+
+.teacher-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.teacher-header-left h1{
+
+    margin:0;
+
+    font-size:32px;
+
+    color:#0f172a;
+
+}
+
+.teacher-header-left p{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+}
+
+.add-teacher-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.add-teacher-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:768px){
+
+    .teacher-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}

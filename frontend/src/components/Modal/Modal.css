@@ -1,0 +1,289 @@
+/**
+=========================================
+Component : Modal
+Project   : ClassPilot
+Version   : 1.0.0
+=========================================
+*/
+
+/* ===============================
+   Overlay
+================================ */
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:24px;
+
+    z-index:9999;
+
+    animation:fadeIn .25s ease;
+
+}
+
+/* ===============================
+   Modal
+================================ */
+
+.modal{
+
+    width:100%;
+
+    background:#ffffff;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    animation:modalScale .25s ease;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+}
+
+/* ===============================
+   Sizes
+================================ */
+
+.modal-sm{
+
+    max-width:420px;
+
+}
+
+.modal-md{
+
+    max-width:650px;
+
+}
+
+.modal-lg{
+
+    max-width:950px;
+
+}
+
+/* ===============================
+   Header
+================================ */
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 24px;
+
+    border-bottom:1px solid #e2e8f0;
+
+    background:#ffffff;
+
+}
+
+.modal-header h2{
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#1e293b;
+
+    font-weight:600;
+
+}
+
+/* ===============================
+   Close Button
+================================ */
+
+.modal-close-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f8fafc;
+
+    color:#64748b;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.modal-close-btn:hover{
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+}
+
+/* ===============================
+   Body
+================================ */
+
+.modal-body{
+
+    padding:24px;
+
+    max-height:70vh;
+
+    overflow-y:auto;
+
+}
+
+/* Scrollbar */
+
+.modal-body::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.modal-body::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}
+
+/* ===============================
+   Footer (Future Ready)
+================================ */
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 24px;
+
+    border-top:1px solid #e2e8f0;
+
+    background:#ffffff;
+
+}
+
+/* ===============================
+   Animations
+================================ */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes modalScale{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.92);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+@media(max-width:768px){
+
+    .modal-overlay{
+
+        padding:14px;
+
+    }
+
+    .modal{
+
+        max-width:100% !important;
+
+        border-radius:12px;
+
+    }
+
+    .modal-header{
+
+        padding:16px 18px;
+
+    }
+
+    .modal-header h2{
+
+        font-size:18px;
+
+    }
+
+    .modal-body{
+
+        padding:18px;
+
+        max-height:75vh;
+
+    }
+
+}

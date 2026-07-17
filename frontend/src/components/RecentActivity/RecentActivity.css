@@ -1,0 +1,31 @@
+.activity-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.activity-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.activity-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+}

@@ -1,0 +1,241 @@
+.student-table{
+
+    background:#ffffff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.student-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.student-table th{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+.student-table td{
+
+    padding:16px;
+
+    border-bottom:1px solid #e2e8f0;
+
+}
+
+.student-table tr:hover{
+
+    background:#f8fafc;
+
+}
+
+.delete-btn{
+
+    width:36px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}
+
+
+.table-action{
+
+    width:36px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    color:#ffffff;
+
+    transition:.3s;
+
+}
+
+.table-action.view{
+
+    background:#2563eb;
+
+}
+
+.table-action.view:hover{
+
+    background:#1d4ed8;
+
+}
+
+.table-action.edit{
+
+    background:#22c55e;
+
+}
+
+.table-action.edit:hover{
+
+    background:#16a34a;
+
+}
+
+.table-action.delete{
+
+    background:#ef4444;
+
+}
+
+.table-action.delete:hover{
+
+    background:#dc2626;
+
+}
+
+
+/* =====================================
+   Student Table
+===================================== */
+
+.table-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.table-action{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:8px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    color:#ffffff;
+
+}
+
+.table-action.view{
+
+    background:#2563eb;
+
+}
+
+.table-action.view:hover{
+
+    background:#1d4ed8;
+
+}
+
+.table-action.edit{
+
+    background:#22c55e;
+
+}
+
+.table-action.edit:hover{
+
+    background:#16a34a;
+
+}
+
+.table-action.delete{
+
+    background:#ef4444;
+
+}
+
+.table-action.delete:hover{
+
+    background:#dc2626;
+
+}
+
+/* =====================================
+   Status Badge
+===================================== */
+
+.status-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:90px;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status-badge.active{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.status-badge.inactive{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}

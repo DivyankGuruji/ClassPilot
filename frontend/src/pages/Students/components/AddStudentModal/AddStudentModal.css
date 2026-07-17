@@ -1,0 +1,51 @@
+/*
+=========================================
+Add Student Modal
+=========================================
+*/
+
+.student-form{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.full-width{
+
+    grid-column:1/-1;
+
+}
+
+.student-form-actions{
+
+    grid-column:1/-1;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+@media(max-width:768px){
+
+    .student-form{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .student-form-actions{
+
+        flex-direction:column-reverse;
+
+    }
+
+}

@@ -1,0 +1,254 @@
+/**
+=========================================
+Component : AddFeeModal
+Project   : ClassPilot
+=========================================
+*/
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:24px;
+
+    z-index:9999;
+
+}
+
+.modal-box{
+
+    width:100%;
+
+    max-width:900px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 24px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+.modal-header h2{
+
+    margin:0;
+
+    color:var(--text-color);
+
+    font-size:24px;
+
+}
+
+.modal-header button{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:transparent;
+
+    color:var(--text-secondary);
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.25s;
+
+}
+
+.modal-header button:hover{
+
+    background:var(--bg-color);
+
+    color:var(--text-color);
+
+}
+
+.fee-form{
+
+    padding:24px;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--text-color);
+
+}
+
+.form-group input,
+.form-group select{
+
+    width:100%;
+
+    padding:12px 14px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    background:var(--card-bg);
+
+    color:var(--text-color);
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border-color:var(--primary-color);
+
+}
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:14px;
+
+    padding:20px 24px;
+
+    border-top:1px solid var(--border-color);
+
+}
+
+.cancel-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#e2e8f0;
+
+    color:#334155;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.cancel-btn:hover{
+
+    background:#cbd5e1;
+
+}
+
+.save-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary-color);
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.save-btn:hover{
+
+    background:var(--primary-hover);
+
+}
+
+@media(max-width:768px){
+
+    .modal-box{
+
+        max-width:100%;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .modal-footer{
+
+        flex-direction:column-reverse;
+
+    }
+
+    .modal-footer button{
+
+        width:100%;
+
+    }
+
+}

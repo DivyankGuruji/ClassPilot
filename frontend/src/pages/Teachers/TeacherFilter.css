@@ -1,0 +1,60 @@
+/**
+=========================================
+Component : TeacherFilter
+Project   : ClassPilot
+=========================================
+*/
+
+.teacher-filter{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:18px;
+
+    margin-bottom:20px;
+
+}
+
+.teacher-filter input,
+
+.teacher-filter select{
+
+    width:100%;
+
+    padding:12px 16px;
+
+    border:1px solid #dbe3ec;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+    background:#ffffff;
+
+    transition:.2s;
+
+}
+
+.teacher-filter input:focus,
+
+.teacher-filter select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+@media(max-width:768px){
+
+    .teacher-filter{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

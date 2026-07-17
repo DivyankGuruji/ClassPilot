@@ -1,0 +1,29 @@
+.theme-toggle{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:var(--card-bg);
+
+    color:var(--text-color);
+
+    border:1px solid var(--border-color);
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.theme-toggle:hover{
+
+    transform:rotate(25deg);
+
+}

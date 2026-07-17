@@ -1,0 +1,114 @@
+/**
+=========================================
+Theme
+Project : ClassPilot
+=========================================
+*/
+
+/* =========================================
+LIGHT THEME
+========================================= */
+
+:root{
+
+    /* Brand */
+
+    --primary-color:#2563eb;
+    --primary-hover:#1d4ed8;
+
+    --success-color:#22c55e;
+    --warning-color:#f59e0b;
+    --danger-color:#ef4444;
+    --info-color:#0ea5e9;
+
+    /* Background */
+
+    --bg-color:#f8fafc;
+
+    --card-bg:#ffffff;
+
+    --sidebar-bg:#ffffff;
+
+    --header-bg:#ffffff;
+
+    /* Text */
+
+    --text-color:#0f172a;
+
+    --text-secondary:#64748b;
+
+    --text-light:#94a3b8;
+
+    /* Border */
+
+    --border-color:#e2e8f0;
+
+    /* Shadow */
+
+    --shadow-sm:0 2px 8px rgba(15,23,42,.05);
+
+    --shadow-md:0 8px 24px rgba(15,23,42,.08);
+
+    --shadow-lg:0 12px 30px rgba(15,23,42,.12);
+
+    /* Radius */
+
+    --radius-sm:8px;
+
+    --radius-md:12px;
+
+    --radius-lg:18px;
+
+    /* Transition */
+
+    --transition:.25s ease;
+
+}
+
+/* =========================================
+DARK THEME
+========================================= */
+
+[data-theme="dark"]{
+
+    /* Brand */
+
+    --primary-color:#3b82f6;
+    --primary-hover:#60a5fa;
+
+    --success-color:#22c55e;
+    --warning-color:#fbbf24;
+    --danger-color:#f87171;
+    --info-color:#38bdf8;
+
+    /* Background */
+
+    --bg-color:#0f172a;
+
+    --card-bg:#1e293b;
+
+    --sidebar-bg:#172554;
+
+    --header-bg:#1e293b;
+
+    /* Text */
+
+    --text-color:#f8fafc;
+
+    --text-secondary:#cbd5e1;
+
+    --text-light:#94a3b8;
+
+    /* Border */
+
+    --border-color:#334155;
+
+    /* Shadow */
+
+    --shadow-sm:0 2px 10px rgba(0,0,0,.30);
+
+    --shadow-md:0 10px 28px rgba(0,0,0,.40);
+
+    --shadow-lg:0 18px 40px rgba(0,0,0,.50);
+
+}

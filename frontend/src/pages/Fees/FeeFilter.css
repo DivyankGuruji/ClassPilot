@@ -1,0 +1,82 @@
+/**
+=========================================
+Component : FeeFilter
+Project   : ClassPilot
+=========================================
+*/
+
+.fee-filter{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:20px;
+
+    margin-bottom:24px;
+
+}
+
+.fee-search{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    padding:0 14px;
+
+}
+
+.fee-search svg{
+
+    color:var(--text-secondary);
+
+}
+
+.fee-search input{
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    padding:14px 0;
+
+    width:100%;
+
+}
+
+.fee-filter select{
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border-color);
+
+    background:var(--card-bg);
+
+    color:var(--text-color);
+
+    outline:none;
+
+}
+
+@media(max-width:768px){
+
+    .fee-filter{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

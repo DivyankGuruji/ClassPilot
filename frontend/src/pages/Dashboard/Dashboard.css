@@ -1,0 +1,89 @@
+/**
+=========================================
+Page : Dashboard
+Project : ClassPilot
+=========================================
+*/
+
+.dashboard-page{
+
+    min-height:100vh;
+
+    padding:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    background:var(--bg-color);
+
+    transition:background var(--transition);
+
+}
+
+/* ==========================
+Grid Layout
+========================== */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:24px;
+
+    align-items:start;
+
+}
+
+/* ==========================
+Cards
+========================== */
+
+.dashboard-card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-lg);
+
+    padding:24px;
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+
+}
+
+/* ==========================
+Responsive
+========================== */
+
+@media(max-width:1200px){
+
+    .dashboard-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .dashboard-page{
+
+        padding:18px;
+
+        gap:20px;
+
+    }
+
+}

@@ -1,0 +1,134 @@
+/**
+=========================================
+Component : FeeProfileModal
+Project   : ClassPilot
+=========================================
+*/
+
+.fee-profile-modal{
+
+    width:100%;
+
+    max-width:760px;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.fee-profile-body{
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.fee-avatar{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.fee-profile-body h3{
+
+    margin:0;
+
+    color:var(--text-color);
+
+}
+
+.fee-profile-body p{
+
+    margin:0;
+
+    color:var(--text-secondary);
+
+}
+
+.fee-profile-grid{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:12px;
+
+}
+
+.fee-profile-grid div{
+
+    background:var(--bg-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    padding:14px;
+
+}
+
+.fee-profile-grid label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:var(--text-secondary);
+
+    font-size:13px;
+
+}
+
+.fee-profile-grid span{
+
+    color:var(--text-color);
+
+    font-weight:600;
+
+}
+
+@media(max-width:768px){
+
+    .fee-profile-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

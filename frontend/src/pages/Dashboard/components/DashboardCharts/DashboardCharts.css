@@ -1,0 +1,106 @@
+/**
+=========================================
+Component : DashboardCharts
+Project   : ClassPilot
+=========================================
+*/
+
+.dashboard-charts{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+    margin-top:24px;
+
+}
+
+.chart-card{
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.chart-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.chart-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    color:#0f172a;
+
+}
+
+.chart-header span{
+
+    font-size:13px;
+
+    color:#64748b;
+
+}
+
+.chart-placeholder{
+
+    height:280px;
+
+    border:2px dashed #cbd5e1;
+
+    border-radius:14px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:48px;
+
+    color:#94a3b8;
+
+}
+
+.chart-placeholder p{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:#64748b;
+
+}
+
+@media(max-width:992px){
+
+    .dashboard-charts{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

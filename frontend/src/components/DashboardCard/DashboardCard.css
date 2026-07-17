@@ -1,0 +1,29 @@
+.dashboard-card{
+
+    background:#fff;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+
+    padding:22px;
+
+}
+
+.dashboard-card-header{
+
+    margin-bottom:18px;
+
+}
+
+.dashboard-card-header h3{
+
+    color:#1e293b;
+
+}
+
+.dashboard-card-body{
+
+    color:#64748b;
+
+}

@@ -1,0 +1,415 @@
+/* ===========================
+   AUTH PAGE
+=========================== */
+
+.login-page,
+.forgot-password-page,
+.reset-password-page{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f1f5f9;
+
+    padding:30px;
+
+}
+
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.login-container{
+
+    width:100%;
+    max-width:1200px;
+    min-height:700px;
+
+    background:#ffffff;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.08);
+
+}
+
+
+/* ===========================
+   LEFT SECTION
+=========================== */
+
+.login-left{
+
+    padding:60px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+
+.login-brand{
+
+    margin-bottom:50px;
+
+}
+
+
+.login-brand h1{
+
+    font-size:38px;
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
+
+
+.login-brand p{
+
+    color:#64748b;
+
+    margin-top:8px;
+
+    font-size:16px;
+
+}
+
+
+.login-content h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+    color:#1e293b;
+
+}
+
+
+.login-content p{
+
+    color:#64748b;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ===========================
+   FORM
+=========================== */
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+    color:#334155;
+
+}
+
+
+.form-group input{
+
+    width:100%;
+
+    height:50px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:10px;
+
+    padding:0 18px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+.form-group input:focus{
+
+    border-color:#2563eb;
+
+}
+
+
+/* ===========================
+   OPTIONS
+=========================== */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+
+.remember-me{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    color:#475569;
+
+}
+
+
+.forgot-password{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:500;
+
+}
+
+
+.forgot-password:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.login-btn,
+.forgot-btn,
+.reset-btn{
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.login-btn:hover,
+.forgot-btn:hover,
+.reset-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ===========================
+   RIGHT SECTION
+=========================== */
+
+.login-right{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px;
+
+}
+
+
+.login-info{
+
+    max-width:420px;
+
+}
+
+
+.login-info h2{
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+    line-height:1.3;
+
+}
+
+
+.login-info p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    opacity:.9;
+
+}
+
+
+/* ===========================
+   FORGOT PASSWORD
+=========================== */
+
+.forgot-password-card,
+.reset-password-card{
+
+    width:100%;
+
+    max-width:500px;
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+.forgot-password-card h1,
+.reset-password-card h1{
+
+    margin-bottom:15px;
+
+    color:#1e293b;
+
+}
+
+
+.forgot-password-card p,
+.reset-password-card p{
+
+    color:#64748b;
+
+    margin-bottom:30px;
+
+}
+
+
+.back-login{
+
+    display:block;
+
+    margin-top:20px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .login-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .login-right{
+
+        display:none;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .login-page,
+    .forgot-password-page,
+    .reset-password-page{
+
+        padding:15px;
+
+    }
+
+    .login-left{
+
+        padding:35px;
+
+    }
+
+    .login-brand h1{
+
+        font-size:30px;
+
+    }
+
+    .login-content h2{
+
+        font-size:24px;
+
+    }
+
+}
